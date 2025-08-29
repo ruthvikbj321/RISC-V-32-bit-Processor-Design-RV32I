@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_integer_file
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:10 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: rd_addr_in[1]
+              (input port)
+  Endpoint: rs_1_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  rd_addr_in[1] (in)                       0.00       0.00 f
+  U3702/Z (IVP)                            0.75       0.75 r
+  U5839/Z (AO2)                            0.55       1.30 f
+  U5840/Z (NR4)                            1.58       2.89 r
+  U5841/Z (AO3)                            0.62       3.51 f
+  U5842/Z (AO6)                            9.44      12.95 r
+  U5850/Z (NR2)                            0.37      13.31 f
+  U5851/Z (ND2)                            1.60      14.91 r
+  U5899/Z (NR2)                            2.13      17.05 f
+  U6534/Z (AO2)                            1.08      18.13 r
+  U6538/Z (ND4)                            0.59      18.72 f
+  U6554/Z (OR4P)                           1.87      20.59 f
+  rs_1_out[31] (out)                       0.00      20.59 f
+  data arrival time                                  20.59
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

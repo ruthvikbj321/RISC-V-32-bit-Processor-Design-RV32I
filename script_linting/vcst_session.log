@@ -1,0 +1,262 @@
+
+                                   VC Static 
+
+                 Version T-2022.06 for linux64 - May 30, 2022 
+
+                    Copyright (c) 2010 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+restore_session -level default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MasterSourceFile top.tcl
+# Liberty files are needed for logical and physical netlist designs
+set search_path "./"
+set link_library " "
+# Enable linting
+set_app_var enable_lint true
+# Configure lint setup
+configure_lint_setup -goal lint_rtl
+# Analyze all RTL files (so dependencies are included)
+analyze -verbose -format verilog ../rtl/*.v
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/analyzeCmd1 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 30 02:53:07 2025
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/undef_vcs.v'
+Parsing design file '../rtl/csr_data_mux_unit.v'
+Parsing design file '../rtl/data_wr_mux_unit.v'
+Parsing design file '../rtl/machine_counter.v'
+Parsing design file '../rtl/machine_counter_setup.v'
+Parsing design file '../rtl/mcause_reg.v'
+Parsing design file '../rtl/mepc_and_mscratch_reg.v'
+Parsing design file '../rtl/mie_reg.v'
+Parsing design file '../rtl/mip_reg.v'
+Parsing design file '../rtl/misa_and_pre_data.v'
+Parsing design file '../rtl/msrv32_csr_file.v'
+Parsing design file '../rtl/msrv32_machine_control.v'
+Parsing design file '../rtl/mstatus_reg.v'
+Parsing design file '../rtl/mtval_reg.v'
+Parsing design file '../rtl/mtvec_reg.v'
+CPU time: .101 seconds to compile
+analyze -verbose -format sverilog ../rtl/*.sv
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/analyzeCmd2 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 30 02:53:07 2025
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/undef_vcs.v'
+Parsing design file '../rtl/msrv32_alu.sv'
+Parsing design file '../rtl/msrv32_branch_unit.sv'
+Parsing design file '../rtl/msrv32_decoder.sv'
+Parsing design file '../rtl/msrv32_imm_generator.sv'
+Parsing design file '../rtl/msrv32_immediate_adder.sv'
+Parsing design file '../rtl/msrv32_instruction_mux.sv'
+Parsing design file '../rtl/msrv32_integer_file.sv'
+Parsing design file '../rtl/msrv32_load_unit.sv'
+Parsing design file '../rtl/msrv32_pc.sv'
+Parsing design file '../rtl/msrv32_reg_block2.sv'
+Parsing design file '../rtl/msrv32_reg_block_1.sv'
+Parsing design file '../rtl/msrv32_store_unit.sv'
+Parsing design file '../rtl/msrv32_top.sv'
+Parsing design file '../rtl/msrv32_wb_mux_sel_unit.sv'
+Parsing design file '../rtl/msrv32_wr_en_generator.sv'
+CPU time: .104 seconds to compile
+# Elaborate the top module
+elaborate msrv32_top
+Doing common elaboration 
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/msrv32_machine_control.v, 18
+  Module "msrv32_machine_control" has `timescale but previous module(s) do 
+  not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/msrv32_csr_file.v, 32
+  Module "msrv32_csr_file" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/data_wr_mux_unit.v, 4
+  Module "data_wr_mux_unit" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/csr_data_mux_unit.v, 4
+  Module "csr_data_mux_unit" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mstatus_reg.v, 2
+  Module "mstatus_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/misa_and_pre_data.v, 4
+  Module "misa_and_pre_data" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mie_reg.v, 4
+  Module "mie_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mtvec_reg.v, 2
+  Module "mtvec_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mepc_and_mscratch_reg.v, 2
+  Module "mepc_and_mscratch_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mcause_reg.v, 2
+  Module "mcause_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mip_reg.v, 2
+  Module "mip_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/mtval_reg.v, 3
+  Module "mtval_reg" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/machine_counter_setup.v, 4
+  Module "machine_counter_setup" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+
+Warning-[UTSFM] Unspecified `timescale for module
+../rtl/machine_counter.v, 2
+  Module "machine_counter" has `timescale but previous module(s) do not.
+  Please either remove this module's timescale or add timescale for previous 
+  module(s)to avoid unexpected simulation result.
+
+Final timescale is '1ps/1ps'
+Info: Invoking Simon...
+Info: Simon VCS Start
+Importing Symbol Libraries...
+=======================================================
+VCS CPU Time(s)     :0.11
+SIMON CPU Time(s)   :0.21
+SIMON Total Time(s) :0.06
+Peak Memory(MB)     :384
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+[Info] Loading Lint Language Checker starting
+
+Warning-[DB_CANT_LOAD] Invalid library file specified.
+  Invalid link library file specified. Cannot load link library './/'
+
+[Info] Loading Lint Language Checker Finished 
+  Failed to import the "default_u" library because the library files cannot be found in the library paths.
+---Any error or warning message, please refer to /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/verdi/elabcomLog/libCompiler.log---
+
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+# Gate Counts 
+Number of Flat Instances = 7515
+Number of Operator = 7515
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+
+# Run lint checks
+check_lint
+[Info] Running goal lint_rtl
+Inferring all potential clocks
+Inferring all potential resets
+eval {;}
+waive_lint -tag "InferLatch" -add i_addr_out[31:0] 
+# Report lint results
+report_lint -verbose -file ./report/msrv32_top_report.txt
+

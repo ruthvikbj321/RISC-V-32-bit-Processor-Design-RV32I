@@ -1,0 +1,317 @@
+###############################################################
+ # This report contains names of design units along with parameter
+ # values and self instances.
+ # Some parameters may have more than one possible values for that
+ # design unit, values will be unique for instances. It is indicated as
+ # "Multiple Values".
+ # In some cases instance count shown may be less than actual instance
+ # count in the design due to optimizations. It is indicated as
+ # "Optimized".
+###############################################################
+
+
+Design Unit Name: 'msrv32_top', (../rtl/msrv32_top.sv:1)
+    Parameters (Total 7)
+        BOOT_ADDRESS = 32'h00000000  (default: 32'h00000000)
+        WB_ALU = 3'b000  (default: 3'b000)
+        WB_LU = 3'b001  (default: 3'b001)
+        WB_IMM = 3'b010  (default: 3'b010)
+        WB_IADDER_OUT = 3'b011  (default: 3'b011)
+        WB_CSR = 3'b100  (default: 3'b100)
+        WB_PC_PLUS = 3'b101  (default: 3'b101)
+    Instances (Total: 0)
+=============================================
+
+
+Design Unit Name: 'msrv32_pc', (../rtl/msrv32_pc.sv:1)
+    Parameters (Total 1)
+        BOOT_ADDRESS = 32'b0  (default: 32'b0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/PC
+=============================================
+
+
+Design Unit Name: 'msrv32_reg_block_1', (../rtl/msrv32_reg_block_1.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/REG1
+=============================================
+
+
+Design Unit Name: 'msrv32_imm_generator', (../rtl/msrv32_imm_generator.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/IMG
+=============================================
+
+
+Design Unit Name: 'msrv32_immediate_adder', (../rtl/msrv32_immediate_adder.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/imm_adder
+=============================================
+
+
+Design Unit Name: 'msrv32_integer_file', (../rtl/msrv32_integer_file.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/IRF
+=============================================
+
+
+Design Unit Name: 'msrv32_wr_en_generator', (../rtl/msrv32_wr_en_generator.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/WREN
+=============================================
+
+
+Design Unit Name: 'msrv32_instruction_mux', (../rtl/msrv32_instruction_mux.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/ID
+=============================================
+
+
+Design Unit Name: 'msrv32_branch_unit', (../rtl/msrv32_branch_unit.sv:1)
+    Parameters (Total 3)
+        JAL = 5'b11011  (default: 5'b11011)
+        JALR = 5'b11001  (default: 5'b11001)
+        Branch = 5'b11000  (default: 5'b11000)
+    Instances (Total 1)(Optimized)
+        msrv32_top/BU
+=============================================
+
+
+Design Unit Name: 'msrv32_decoder', (../rtl/msrv32_decoder.sv:1)
+    Parameters (Total 21)
+        OPCODE_BRANCH = 5'b11000  (default: 5'b11000)
+        OPCODE_JAL = 5'b11011  (default: 5'b11011)
+        OPCODE_JALR = 5'b11001  (default: 5'b11001)
+        OPCODE_AUIPC = 5'b00101  (default: 5'b00101)
+        OPCODE_LUI = 5'b01101  (default: 5'b01101)
+        OPCODE_OP = 5'b01100  (default: 5'b01100)
+        OPCODE_OP_IMM = 5'b00100  (default: 5'b00100)
+        OPCODE_LOAD = 5'b00000  (default: 5'b00000)
+        OPCODE_STORE = 5'b01000  (default: 5'b01000)
+        OPCODE_SYSTEM = 5'b11100  (default: 5'b11100)
+        OPCODE_MISC_MEM = 5'b00011  (default: 5'b00011)
+        FUNCT3_ADD = 3'b000  (default: 3'b000)
+        FUNCT3_SUB = 3'b000  (default: 3'b000)
+        FUNCT3_XOR = 3'b100  (default: 3'b100)
+        FUNCT3_OR = 3'b110  (default: 3'b110)
+        FUNCT3_AND = 3'b111  (default: 3'b111)
+        FUNCT3_SLL = 3'b001  (default: 3'b001)
+        FUNCT3_SRL = 3'b101  (default: 3'b101)
+        FUNCT3_SRA = 3'b101  (default: 3'b101)
+        FUNCT3_SLT = 3'b010  (default: 3'b010)
+        FUNCT3_SLTU = 3'b011  (default: 3'b011)
+    Instances (Total 1)(Optimized)
+        msrv32_top/DEC
+=============================================
+
+
+Design Unit Name: 'msrv32_machine_control', (../rtl/msrv32_machine_control.v:18)
+    Parameters (Total 8)
+        STATE_RESET = 4'b0001  (default: 4'b0001)
+        STATE_OPERATING = 4'b0010  (default: 4'b0010)
+        STATE_TRAP_TAKEN = 4'b0100  (default: 4'b0100)
+        STATE_TRAP_RETURN = 4'b1000  (default: 4'b1000)
+        PC_BOOT = 2'b00  (default: 2'b00)
+        PC_EPC = 2'b01  (default: 2'b01)
+        PC_TRAP = 2'b10  (default: 2'b10)
+        PC_NEXT = 2'b11  (default: 2'b11)
+    Instances (Total 1)(Optimized)
+        msrv32_top/MC
+=============================================
+
+
+Design Unit Name: 'msrv32_csr_file', (../rtl/msrv32_csr_file.v:32)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF
+=============================================
+
+
+Design Unit Name: 'data_wr_mux_unit', (../rtl/data_wr_mux_unit.v:4)
+    Parameters (Total 4)
+        CSR_NOP = 2'b00  (default: 2'b00)
+        CSR_RW = 2'b01  (default: 2'b01)
+        CSR_RS = 2'b10  (default: 2'b10)
+        CSR_RC = 2'b11  (default: 2'b11)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/DRMU
+=============================================
+
+
+Design Unit Name: 'csr_data_mux_unit', (../rtl/csr_data_mux_unit.v:4)
+    Parameters (Total 20)
+        CYCLE = 12'hC00  (default: 12'hC00)
+        TIME = 12'hC01  (default: 12'hC01)
+        INSTRET = 12'hC02  (default: 12'hC02)
+        CYCLEH = 12'hC80  (default: 12'hC80)
+        TIMEH = 12'hC81  (default: 12'hC81)
+        INSTRETH = 12'hC82  (default: 12'hC82)
+        MSTATUS = 12'h300  (default: 12'h300)
+        MISA = 12'h301  (default: 12'h301)
+        MIE = 12'h304  (default: 12'h304)
+        MTVEC = 12'h305  (default: 12'h305)
+        MSCRATCH = 12'h340  (default: 12'h340)
+        MEPC = 12'h341  (default: 12'h341)
+        MCAUSE = 12'h342  (default: 12'h342)
+        MTVAL = 12'h343  (default: 12'h343)
+        MIP = 12'h344  (default: 12'h344)
+        MCYCLE = 12'hB00  (default: 12'hB00)
+        MINSTRET = 12'hB02  (default: 12'hB02)
+        MCYCLEH = 12'hB80  (default: 12'hB80)
+        MINSTRETH = 12'hB82  (default: 12'hB82)
+        MCOUNTINHIBIT = 12'h320  (default: 12'h320)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/CDMU
+=============================================
+
+
+Design Unit Name: 'mstatus_reg', (../rtl/mstatus_reg.v:2)
+    Parameters (Total 1)
+        MSTATUS = 12'h300  (default: 12'h300)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MS
+=============================================
+
+
+Design Unit Name: 'misa_and_pre_data', (../rtl/misa_and_pre_data.v:4)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MPD
+=============================================
+
+
+Design Unit Name: 'mie_reg', (../rtl/mie_reg.v:4)
+    Parameters (Total 1)
+        MIE = 12'h304  (default: 12'h304)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MIE_REG
+=============================================
+
+
+Design Unit Name: 'mtvec_reg', (../rtl/mtvec_reg.v:2)
+    Parameters (Total 3)
+        MTVEC_BASE_RESET = 30'b000000000000000000000000000000  (default: 30'b000000000000000000000000000000)
+        MTVEC_MODE_RESET = 2'b00  (default: 2'b00)
+        MTVEC = 12'h305  (default: 12'h305)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MTVEC_REG
+=============================================
+
+
+Design Unit Name: 'mepc_and_mscratch_reg', (../rtl/mepc_and_mscratch_reg.v:2)
+    Parameters (Total 4)
+        MSCRATCH_RESET = 32'h00000000  (default: 32'h00000000)
+        MSCRATCH = 12'h340  (default: 12'h340)
+        MEPC_RESET = 32'h00000000  (default: 32'h00000000)
+        MEPC = 12'h341  (default: 12'h341)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MM_REG
+=============================================
+
+
+Design Unit Name: 'mcause_reg', (../rtl/mcause_reg.v:2)
+    Parameters (Total 1)
+        MCAUSE = 12'h342  (default: 12'h342)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MCAUSE_REG
+=============================================
+
+
+Design Unit Name: 'mip_reg', (../rtl/mip_reg.v:2)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MIP_REG
+=============================================
+
+
+Design Unit Name: 'mtval_reg', (../rtl/mtval_reg.v:3)
+    Parameters (Total 1)
+        MTVAL = 12'h343  (default: 12'h343)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MTVAL_REG
+=============================================
+
+
+Design Unit Name: 'machine_counter_setup', (../rtl/machine_counter_setup.v:4)
+    Parameters (Total 3)
+        MCOUNTINHIBIT_CY_RESET = 1'b0  (default: 1'b0)
+        MCOUNTINHIBIT_IR_RESET = 1'b0  (default: 1'b0)
+        MCOUNTINHIBIT = 12'h320  (default: 12'h320)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MCS
+=============================================
+
+
+Design Unit Name: 'machine_counter', (../rtl/machine_counter.v:2)
+    Parameters (Total 10)
+        MCYCLE_RESET = 32'h00000000  (default: 32'h00000000)
+        TIME_RESET = 32'h00000000  (default: 32'h00000000)
+        MINSTRET_RESET = 32'h00000000  (default: 32'h00000000)
+        MCYCLEH_RESET = 32'h00000000  (default: 32'h00000000)
+        TIMEH_RESET = 32'h00000000  (default: 32'h00000000)
+        MINSTRETH_RESET = 32'h00000000  (default: 32'h00000000)
+        MCYCLE = 12'hB00  (default: 12'hB00)
+        MCYCLEH = 12'hB80  (default: 12'hB80)
+        MINSTRET = 12'hB02  (default: 12'hB02)
+        MINSTRETH = 12'hB82  (default: 12'hB82)
+    Instances (Total 1)(Optimized)
+        msrv32_top/CSRF/MC
+=============================================
+
+
+Design Unit Name: 'msrv32_reg_block2', (../rtl/msrv32_reg_block2.sv:1)
+    Parameters (Total 1)
+        BOOT_ADDRESS = 32'h00000000  (default: 32'h00000000)
+    Instances (Total 1)(Optimized)
+        msrv32_top/REG2
+=============================================
+
+
+Design Unit Name: 'msrv32_store_unit', (../rtl/msrv32_store_unit.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/SU
+=============================================
+
+
+Design Unit Name: 'msrv32_load_unit', (../rtl/msrv32_load_unit.sv:1)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        msrv32_top/LU
+=============================================
+
+
+Design Unit Name: 'msrv32_alu', (../rtl/msrv32_alu.sv:1)
+    Parameters (Total 8)
+        FUNCT3_ADD = 3'b000  (default: 3'b000)
+        FUNCT3_SLT = 3'b010  (default: 3'b010)
+        FUNCT3_SLTU = 3'b011  (default: 3'b011)
+        FUNCT3_AND = 3'b111  (default: 3'b111)
+        FUNCT3_OR = 3'b110  (default: 3'b110)
+        FUNCT3_XOR = 3'b100  (default: 3'b100)
+        FUNCT3_SLL = 3'b001  (default: 3'b001)
+        FUNCT3_SRL = 3'b101  (default: 3'b101)
+    Instances (Total 1)(Optimized)
+        msrv32_top/ALU
+=============================================
+
+
+Design Unit Name: 'msrv32_wb_mux_sel_unit', (../rtl/msrv32_wb_mux_sel_unit.sv:1)
+    Parameters (Total 6)
+        WB_MUX = 3'b000  (default: 3'b000)
+        WB_LU = 3'b001  (default: 3'b001)
+        WB_IMM = 3'b010  (default: 3'b010)
+        WB_IADDER_OUT = 3'b011  (default: 3'b011)
+        WB_CSR = 3'b100  (default: 3'b100)
+        WB_PC_PLUS = 3'b101  (default: 3'b101)
+    Instances (Total 1)(Optimized)
+        msrv32_top/WBMUX
+=============================================
+
+

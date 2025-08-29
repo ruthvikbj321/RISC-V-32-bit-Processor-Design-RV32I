@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mtvec_reg
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:47 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: mtvec_mode_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: trap_address_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  mtvec_mode_reg[0]/CP (FD1)               0.00       0.00 r
+  mtvec_mode_reg[0]/Q (FD1)                1.38       1.38 r
+  U107/Z (AN2P)                            0.83       2.21 r
+  U108/Z (ND2)                             0.30       2.51 f
+  U109/Z (NR2)                             1.33       3.84 r
+  U190/CO (FA1A)                           2.18       6.02 r
+  U189/CO (FA1A)                           2.18       8.20 r
+  U188/CO (FA1A)                           2.18      10.38 r
+  U113/Z (ND2)                             0.47      10.85 f
+  U114/Z (NR2)                             1.33      12.18 r
+  U115/Z (ND2)                             0.47      12.65 f
+  U116/Z (NR2)                             1.33      13.98 r
+  U117/Z (ND2)                             0.47      14.45 f
+  U118/Z (NR2)                             1.33      15.78 r
+  U119/Z (ND2)                             0.47      16.25 f
+  U120/Z (NR2)                             1.33      17.57 r
+  U121/Z (ND2)                             0.47      18.05 f
+  U122/Z (NR2)                             1.33      19.37 r
+  U123/Z (ND2)                             0.47      19.84 f
+  U124/Z (NR2)                             1.33      21.17 r
+  U125/Z (ND2)                             0.47      21.64 f
+  U126/Z (NR2)                             1.33      22.97 r
+  U127/Z (ND2)                             0.47      23.44 f
+  U128/Z (NR2)                             1.33      24.77 r
+  U129/Z (ND2)                             0.47      25.24 f
+  U130/Z (NR2)                             1.33      26.57 r
+  U131/Z (ND2)                             0.47      27.04 f
+  U132/Z (NR2)                             1.33      28.36 r
+  U133/Z (ND2)                             0.47      28.84 f
+  U134/Z (NR2)                             1.33      30.16 r
+  U135/Z (ND2)                             0.47      30.63 f
+  U136/Z (NR2)                             1.33      31.96 r
+  U137/Z (AN2P)                            0.76      32.72 r
+  U192/Z (EO)                              1.06      33.78 f
+  trap_address_out[31] (out)               0.00      33.78 f
+  data arrival time                                  33.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

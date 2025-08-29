@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : mip_reg
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:56 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/lib/lsi_10k.db)
+
+Number of ports:                           40
+Number of nets:                            15
+Number of cells:                           10
+Number of combinational cells:              6
+Number of sequential cells:                 3
+Number of macros/black boxes:               0
+Number of buf/inv:                          3
+Number of references:                       3
+
+Combinational area:                  6.000000
+Buf/Inv area:                        3.000000
+Noncombinational area:              21.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    27.000000
+Total area:                 undefined
+1

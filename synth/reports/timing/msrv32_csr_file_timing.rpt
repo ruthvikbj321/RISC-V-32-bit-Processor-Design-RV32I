@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_csr_file
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:24 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: MTVEC_REG/mtvec_mode_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: trap_address_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  MTVEC_REG/mtvec_mode_reg[0]/CP (FD1)                    0.00       0.00 r
+  MTVEC_REG/mtvec_mode_reg[0]/Q (FD1)                     1.53       1.53 r
+  MTVEC_REG/U3/Z (AN2P)                                   0.83       2.35 r
+  MTVEC_REG/U4/Z (ND2)                                    0.30       2.66 f
+  MTVEC_REG/U5/Z (NR2)                                    1.33       3.98 r
+  MTVEC_REG/U86/CO (FA1A)                                 2.18       6.16 r
+  MTVEC_REG/U85/CO (FA1A)                                 2.18       8.35 r
+  MTVEC_REG/U84/CO (FA1A)                                 2.18      10.53 r
+  MTVEC_REG/U9/Z (ND2)                                    0.47      11.00 f
+  MTVEC_REG/U10/Z (NR2)                                   1.33      12.33 r
+  MTVEC_REG/U11/Z (ND2)                                   0.47      12.80 f
+  MTVEC_REG/U12/Z (NR2)                                   1.33      14.12 r
+  MTVEC_REG/U13/Z (ND2)                                   0.47      14.60 f
+  MTVEC_REG/U14/Z (NR2)                                   1.33      15.92 r
+  MTVEC_REG/U15/Z (ND2)                                   0.47      16.39 f
+  MTVEC_REG/U16/Z (NR2)                                   1.33      17.72 r
+  MTVEC_REG/U17/Z (ND2)                                   0.47      18.19 f
+  MTVEC_REG/U18/Z (NR2)                                   1.33      19.52 r
+  MTVEC_REG/U19/Z (ND2)                                   0.47      19.99 f
+  MTVEC_REG/U20/Z (NR2)                                   1.33      21.32 r
+  MTVEC_REG/U21/Z (ND2)                                   0.47      21.79 f
+  MTVEC_REG/U22/Z (NR2)                                   1.33      23.11 r
+  MTVEC_REG/U23/Z (ND2)                                   0.47      23.59 f
+  MTVEC_REG/U24/Z (NR2)                                   1.33      24.91 r
+  MTVEC_REG/U25/Z (ND2)                                   0.47      25.38 f
+  MTVEC_REG/U26/Z (NR2)                                   1.33      26.71 r
+  MTVEC_REG/U27/Z (ND2)                                   0.47      27.18 f
+  MTVEC_REG/U28/Z (NR2)                                   1.33      28.51 r
+  MTVEC_REG/U29/Z (ND2)                                   0.47      28.98 f
+  MTVEC_REG/U30/Z (NR2)                                   1.33      30.31 r
+  MTVEC_REG/U31/Z (ND2)                                   0.47      30.78 f
+  MTVEC_REG/U32/Z (NR2)                                   1.33      32.11 r
+  MTVEC_REG/U33/Z (AN2P)                                  0.76      32.86 r
+  MTVEC_REG/U88/Z (EO)                                    1.06      33.92 f
+  MTVEC_REG/trap_address_out[31] (mtvec_reg)              0.00      33.92 f
+  trap_address_out[31] (out)                              0.00      33.92 f
+  data arrival time                                                 33.92
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

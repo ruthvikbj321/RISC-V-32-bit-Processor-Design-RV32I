@@ -1,0 +1,36 @@
+# vsim -vopt -voptargs="+acc" -coverage -c -do "coverage save -onexit -codeAll ../sim/covdb_store_unit.ucdb; log -r /* ;run -all; quit" msrv32_store_unit_tb -work ../sim -l ../sim/simulation_store_unit.log -wlf ../sim/store_unit/waveform_store_unit.wlf 
+# Start time: 17:02:00 on Aug 29,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2022.1_2 linux_x86_64 Apr  2 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.msrv32_store_unit_tb(fast)
+# Loading work.msrv32_store_unit(fast)
+# coverage save -onexit -codeAll ../sim/covdb_store_unit.ucdb
+#  log -r /* 
+# run -all
+# T=0 funct3=00 addr=12345678 rs2=aabbccdd dout=000000dd mask=0001 wr_req=1 htrans=10 ready=1
+# T=10 funct3=00 addr=12345672 rs2=aabbccdd dout=00dd0000 mask=0100 wr_req=1 htrans=10 ready=1
+# T=20 funct3=01 addr=87654321 rs2=11223344 dout=00000000 mask=0000 wr_req=0 htrans=00 ready=0
+# T=30 funct3=01 addr=87654321 rs2=11223344 dout=00003344 mask=0011 wr_req=1 htrans=10 ready=1
+# T=40 funct3=10 addr=87654321 rs2=11223344 dout=11223344 mask=1111 wr_req=1 htrans=10 ready=1
+# T=50 funct3=11 addr=87654321 rs2=11223344 dout=11223344 mask=1111 wr_req=1 htrans=10 ready=1
+# ** Note: $finish    : ../tb/msrv32_store_unit_tb.sv(75)
+#    Time: 60 ns  Iteration: 0  Instance: /msrv32_store_unit_tb
+# Saving coverage database on exit...
+# End time: 17:02:01 on Aug 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

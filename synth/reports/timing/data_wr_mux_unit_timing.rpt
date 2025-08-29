@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : data_wr_mux_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:42 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: csr_op_1_0_in[0]
+              (input port)
+  Endpoint: data_wr_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  csr_op_1_0_in[0] (in)                    0.00       0.00 f
+  U131/Z (EO1)                             9.18       9.18 r
+  U132/Z (ND2)                             0.22       9.39 f
+  U136/Z (ND2)                             0.50       9.89 r
+  data_wr_out[31] (out)                    0.00       9.89 r
+  data arrival time                                   9.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

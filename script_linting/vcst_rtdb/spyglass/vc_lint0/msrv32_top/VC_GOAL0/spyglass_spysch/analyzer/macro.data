@@ -1,0 +1,30 @@
+22 serialization::archive 18 0 0 17030 0 0 0 0 29 0 2 1 0
+0 64 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_alu.sv 0 0 0 0 0 0 0 0 -1 2
+1 72 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_branch_unit.sv 0 0 0 0 -1 2
+2 68 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_decoder.sv 0 0 0 0 -1 2
+3 74 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_imm_generator.sv 0 0 0 0 -1 2
+4 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_immediate_adder.sv 0 0 0 0 -1 2
+5 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_instruction_mux.sv 0 0 0 0 -1 2
+6 73 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_integer_file.sv 0 0 0 0 -1 2
+7 70 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_load_unit.sv 0 0 0 0 -1 2
+8 63 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_pc.sv 0 0 0 0 -1 2
+9 71 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_reg_block2.sv 0 0 0 0 -1 2
+10 72 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_reg_block_1.sv 0 0 0 0 -1 2
+11 71 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_store_unit.sv 0 0 0 0 -1 2
+12 64 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_top.sv 0 0 0 0 -1 2
+13 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_wb_mux_sel_unit.sv 0 0 0 0 -1 2
+14 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_wr_en_generator.sv 0 0 0 0 -1 2
+15 70 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/csr_data_mux_unit.v 0 0 0 0 -1 2
+16 69 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/data_wr_mux_unit.v 0 0 0 0 -1 2
+17 68 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/machine_counter.v 0 0 0 0 -1 2
+18 74 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/machine_counter_setup.v 0 0 0 0 -1 2
+19 63 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mcause_reg.v 0 0 0 0 -1 2
+20 74 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mepc_and_mscratch_reg.v 0 0 0 0 -1 2
+21 60 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mie_reg.v 0 0 0 0 -1 2
+22 60 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mip_reg.v 0 0 0 0 -1 2
+23 70 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/misa_and_pre_data.v 0 0 0 0 -1 2
+24 68 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_csr_file.v 0 0 0 0 -1 2
+25 75 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_machine_control.v 0 0 0 0 -1 2
+26 64 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mstatus_reg.v 0 0 0 0 -1 2
+27 62 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mtval_reg.v 0 0 0 0 -1 2
+28 62 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mtvec_reg.v 0 0 0 0 -1 0 0 29 0 0 0 70 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/csr_data_mux_unit.v 2 15 69 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/data_wr_mux_unit.v 2 16 68 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/machine_counter.v 2 17 74 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/machine_counter_setup.v 2 18 63 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mcause_reg.v 2 19 74 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mepc_and_mscratch_reg.v 2 20 60 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mie_reg.v 2 21 60 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mip_reg.v 2 22 70 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/misa_and_pre_data.v 2 23 64 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_alu.sv 2 0 72 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_branch_unit.sv 2 1 68 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_csr_file.v 2 24 68 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_decoder.sv 2 2 74 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_imm_generator.sv 2 3 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_immediate_adder.sv 2 4 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_instruction_mux.sv 2 5 73 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_integer_file.sv 2 6 70 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_load_unit.sv 2 7 75 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_machine_control.v 2 25 63 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_pc.sv 2 8 71 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_reg_block2.sv 2 9 72 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_reg_block_1.sv 2 10 71 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_store_unit.sv 2 11 64 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_top.sv 2 12 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_wb_mux_sel_unit.sv 2 13 76 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/msrv32_wr_en_generator.sv 2 14 64 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mstatus_reg.v 2 26 62 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mtval_reg.v 2 27 62 /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/rtl/mtvec_reg.v 2 28 0 0 0 0

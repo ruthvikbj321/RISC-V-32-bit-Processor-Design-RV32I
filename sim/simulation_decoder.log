@@ -1,0 +1,48 @@
+# vsim -vopt -voptargs="+acc" -coverage -c -do "coverage save -onexit -codeAll ../sim/covdb_decoder.ucdb; log -r /* ;run -all; quit" msrv32_decoder_tb -work ../sim -l ../sim/simulation_decoder.log -wlf ../sim/decoder/waveform_decoder.wlf 
+# Start time: 03:07:23 on Aug 22,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2022.1_2 linux_x86_64 Apr  2 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.msrv32_decoder_tb(fast)
+# Loading work.msrv32_decoder(fast)
+# coverage save -onexit -codeAll ../sim/covdb_decoder.ucdb
+#  log -r /* 
+# run -all
+# time=0 i_out_1_to_0_in=00 opcode=0000000 funct3=000 funct7_5=0 -> wb_mux_sel=001 imm_type=001 misaligned_load=0 misaligned_store=0
+# time=20 i_out_1_to_0_in=10 opcode=0010011 funct3=000 funct7_5=1 -> wb_mux_sel=000 imm_type=001 misaligned_load=0 misaligned_store=0
+# time=30 i_out_1_to_0_in=00 opcode=0010011 funct3=001 funct7_5=1 -> wb_mux_sel=000 imm_type=001 misaligned_load=0 misaligned_store=0
+# time=40 i_out_1_to_0_in=11 opcode=0110011 funct3=100 funct7_5=0 -> wb_mux_sel=000 imm_type=000 misaligned_load=0 misaligned_store=0
+# time=50 i_out_1_to_0_in=01 opcode=0110011 funct3=101 funct7_5=0 -> wb_mux_sel=000 imm_type=000 misaligned_load=0 misaligned_store=0
+# time=60 i_out_1_to_0_in=01 opcode=0000011 funct3=101 funct7_5=0 -> wb_mux_sel=001 imm_type=001 misaligned_load=1 misaligned_store=0
+# time=70 i_out_1_to_0_in=01 opcode=0110011 funct3=100 funct7_5=0 -> wb_mux_sel=000 imm_type=000 misaligned_load=0 misaligned_store=0
+# time=80 i_out_1_to_0_in=11 opcode=0000011 funct3=010 funct7_5=1 -> wb_mux_sel=001 imm_type=001 misaligned_load=1 misaligned_store=0
+# time=90 i_out_1_to_0_in=00 opcode=0100011 funct3=000 funct7_5=0 -> wb_mux_sel=000 imm_type=010 misaligned_load=0 misaligned_store=0
+# time=100 i_out_1_to_0_in=01 opcode=1100011 funct3=000 funct7_5=1 -> wb_mux_sel=000 imm_type=011 misaligned_load=0 misaligned_store=0
+# time=110 i_out_1_to_0_in=00 opcode=1100011 funct3=100 funct7_5=1 -> wb_mux_sel=000 imm_type=011 misaligned_load=0 misaligned_store=0
+# time=120 i_out_1_to_0_in=01 opcode=1101111 funct3=100 funct7_5=0 -> wb_mux_sel=101 imm_type=101 misaligned_load=0 misaligned_store=0
+# time=130 i_out_1_to_0_in=11 opcode=1100111 funct3=000 funct7_5=0 -> wb_mux_sel=101 imm_type=001 misaligned_load=0 misaligned_store=0
+# time=140 i_out_1_to_0_in=01 opcode=0110111 funct3=100 funct7_5=1 -> wb_mux_sel=010 imm_type=100 misaligned_load=0 misaligned_store=0
+# time=150 i_out_1_to_0_in=10 opcode=0010111 funct3=100 funct7_5=1 -> wb_mux_sel=011 imm_type=100 misaligned_load=0 misaligned_store=0
+# time=160 i_out_1_to_0_in=00 opcode=1110011 funct3=100 funct7_5=1 -> wb_mux_sel=100 imm_type=110 misaligned_load=0 misaligned_store=0
+# time=170 i_out_1_to_0_in=10 opcode=0000011 funct3=010 funct7_5=1 -> wb_mux_sel=001 imm_type=001 misaligned_load=1 misaligned_store=0
+# time=180 i_out_1_to_0_in=01 opcode=0100011 funct3=001 funct7_5=1 -> wb_mux_sel=000 imm_type=010 misaligned_load=0 misaligned_store=1
+# ** Note: $finish    : ../tb/msrv32_decoder_tb.sv(194)
+#    Time: 190 ns  Iteration: 0  Instance: /msrv32_decoder_tb
+# Saving coverage database on exit...
+# End time: 03:07:24 on Aug 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

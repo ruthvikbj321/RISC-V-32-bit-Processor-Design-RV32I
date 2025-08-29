@@ -1,0 +1,160 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : T-2022.06 -- May 30, 2022
+
+  Report Info
+    Created : Aug 20, 2025  23:48:28
+
+    TopLevelModule: msrv32_integer_file
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage             Family      Fatals    Errors  Warnings     Infos
+  -----             --------  --------  --------  --------  --------
+  LANGUAGE_CHECK    CODING           0         1         1         1
+  STRUCTURAL_CHECK  CODING           0         0         0         7
+  -----             --------  --------  --------  --------  --------
+  Total                              0         1         1         8
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage             Tag                  Count
+  --------  -----             -------------------  -----
+  error     LANGUAGE_CHECK    STARC05-2.10.3.2a        1
+  warning   LANGUAGE_CHECK    STARC05-2.1.4.5          1
+  info      LANGUAGE_CHECK    ReportPortInfo-ML        1
+  info      STRUCTURAL_CHECK  RegInputOutput-ML        7
+  --------  -----             -------------------  -----
+  Total                                               10
+
+
+
+  -----------------------------------------------------------------------------
+  STARC05-2.10.3.2a  (1 error/0 waived)
+  -----------------------------------------------------------------------------
+  Tag             : STARC05-2.10.3.2a
+  Description     : Operand bit-width mismatch for operator '[OpName]': '[RTL_EXPRESSION]' ('[Exp_Size]' bits) and '[HdlExp]' ('[ExprSize]' bits). [Hierarchy: '[HIERARCHY]']
+  Violation       : Lint:9
+  Goal            : lint_rtl
+  Module          : msrv32_integer_file
+  FileName        : ./../rtl/msrv32_integer_file.sv
+  LineNumber      : 30
+  Statement       :       else if(wr_en_in && rd_addr_in) // do not allow write operation for X0 
+  OpName          : &&
+  RTL_EXPRESSION  : wr_en_in
+  Exp_Size        : 1
+  HdlExp          : rd_addr_in
+  ExprSize        : 5
+  HIERARCHY       : :msrv32_integer_file
+
+  -----------------------------------------------------------------------------
+  STARC05-2.1.4.5  (1 warning/0 waived)
+  -----------------------------------------------------------------------------
+  Tag             : STARC05-2.1.4.5
+  Description     : Use bit-wise operator instead of logical operator '[OpName]' in expression '[RTL_EXPRESSION]'
+  Violation       : Lint:8
+  Goal            : lint_rtl
+  Module          : msrv32_integer_file
+  FileName        : ./../rtl/msrv32_integer_file.sv
+  LineNumber      : 30
+  Statement       :       else if(wr_en_in && rd_addr_in) // do not allow write operation for X0 
+  OpName          : &&
+  RTL_EXPRESSION  : (wr_en_in&&rd_addr_in)
+
+  -----------------------------------------------------------------------------
+  RegInputOutput-ML  (7 infos/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:6
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 12
+  Statement           : 			input [31:0]rd_in 
+  Signal              : rd_in[31:0]
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:3
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 7
+  Statement           : 			output [31:0]rs_1_out, rs_2_out, 
+  Signal              : rs_2_out[31:0]
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:4
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 10
+  Statement           : 			input [4:0] rd_addr_in, 
+  Signal              : rd_addr_in[4:0]
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:2
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 6
+  Statement           : 			input [4:0]	rs_1_addr_in, rs_2_addr_in, 
+  Signal              : rs_1_addr_in[4:0]
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:7
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 6
+  Statement           : 			input [4:0]	rs_1_addr_in, rs_2_addr_in, 
+  Signal              : rs_2_addr_in[4:0]
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:5
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 7
+  Statement           : 			output [31:0]rs_1_out, rs_2_out, 
+  Signal              : rs_1_out[31:0]
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:1
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_integer_file.sv
+  LineNumber          : 11
+  Statement           : 			input	wr_en_in, 
+  Signal              : wr_en_in
+  Module              : msrv32_integer_file
+  DesignObjHierarchy  : msrv32_integer_file
+
+  -----------------------------------------------------------------------------
+  ReportPortInfo-ML  (1 info/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : ReportPortInfo-ML
+  Description   : Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt
+  Violation     : Lint:10
+  Goal          : lint_rtl
+  FileName      : /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/spyglass/vc_lint0/msrv32_integer_file/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo
+  LineNumber    : 1
+  Statement     : #     Comment          : Report Top Level Module Port Info

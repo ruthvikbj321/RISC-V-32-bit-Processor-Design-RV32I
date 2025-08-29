@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : data_wr_mux_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:42 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/lib/lsi_10k.db)
+
+Number of ports:                           98
+Number of nets:                           196
+Number of cells:                          130
+Number of combinational cells:            130
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       4
+
+Combinational area:                164.000000
+Buf/Inv area:                        1.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   164.000000
+Total area:                 undefined
+1

@@ -1,0 +1,82 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -kdb=common_elab -sverilog +incdir+./ -skip_translate_body +define+SYNTHESIS -full64 -full64
+
+all :		_VCSgd_0BbNDe_1.db \
+	_VCSgd_aINbae_1.db \
+	_VCSgd_KSiXDd_1.db \
+	_VCSgd_UTnkjc_1.db \
+	_VCSgd_KeebGb_1.db \
+	_VCSgd_jg1Kyc_1.db \
+	_VCSgd_B0dJmc_1.db \
+	_VCSgd_S0WTce_1.db \
+	_VCSgd_nFTVfc_1.db \
+	_VCSgd_eg7x8c_1.db \
+	_VCSgd_efey4_1.db \
+	_VCSgd_CK5NQe_1.db \
+	_VCSgd_9I8wHc_1.db \
+	_VCSgd_9UuS2d_1.db \
+	_VCSgd_UlgEZd_1.db \
+
+
+
+_VCSgd_0BbNDe_1.db :	../rtl/msrv32_alu.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_alu.sv
+
+
+_VCSgd_aINbae_1.db :	../rtl/msrv32_branch_unit.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_branch_unit.sv
+
+
+_VCSgd_KSiXDd_1.db :	../rtl/msrv32_decoder.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_decoder.sv
+
+
+_VCSgd_UTnkjc_1.db :	../rtl/msrv32_imm_generator.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_imm_generator.sv
+
+
+_VCSgd_KeebGb_1.db :	../rtl/msrv32_immediate_adder.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_immediate_adder.sv
+
+
+_VCSgd_jg1Kyc_1.db :	../rtl/msrv32_instruction_mux.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_instruction_mux.sv
+
+
+_VCSgd_B0dJmc_1.db :	../rtl/msrv32_integer_file.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_integer_file.sv
+
+
+_VCSgd_S0WTce_1.db :	../rtl/msrv32_load_unit.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_load_unit.sv
+
+
+_VCSgd_nFTVfc_1.db :	../rtl/msrv32_pc.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_pc.sv
+
+
+_VCSgd_eg7x8c_1.db :	../rtl/msrv32_reg_block2.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_reg_block2.sv
+
+
+_VCSgd_efey4_1.db :	../rtl/msrv32_reg_block_1.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_reg_block_1.sv
+
+
+_VCSgd_CK5NQe_1.db :	../rtl/msrv32_store_unit.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_store_unit.sv
+
+
+_VCSgd_9I8wHc_1.db :	../rtl/msrv32_top.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_top.sv
+
+
+_VCSgd_9UuS2d_1.db :	../rtl/msrv32_wb_mux_sel_unit.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_wb_mux_sel_unit.sv
+
+
+_VCSgd_UlgEZd_1.db :	../rtl/msrv32_wr_en_generator.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../rtl/msrv32_wr_en_generator.sv
+
+

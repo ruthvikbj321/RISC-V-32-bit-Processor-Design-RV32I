@@ -1,0 +1,18 @@
+Module Name,Module Type,Port Name,Direction,Width,Index,Comment Source,Comment 
+msrv32_top,Top_Level,ms_riscv32_mp_clk_in,INPUT,1,-,-,-
+msrv32_top,Top_Level,ms_riscv32_mp_rst_in,INPUT,1,-,-,-
+msrv32_top,Top_Level,ms_riscv32_mp_rc_in,INPUT,64,[63:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_instr_hready_in,INPUT,1,-,module port,connection with instruction mem
+msrv32_top,Top_Level,ms_riscv32_mp_instr_in,INPUT,32,[31:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_imaddr_out,OUTPUT,32,[31:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_data_hready_in,INPUT,1,-,module port,connection with data memory
+msrv32_top,Top_Level,ms_riscv32_mp_hresp_in,INPUT,1,-,-,-
+msrv32_top,Top_Level,ms_riscv32_mp_dmdata_in,INPUT,32,[31:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_dmaddr_out,OUTPUT,32,[31:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_dmdata_out,OUTPUT,32,[31:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_dmwr_req_out,OUTPUT,1,-,-,-
+msrv32_top,Top_Level,ms_riscv32_mp_dmwr_mask_out,OUTPUT,4,[3:0],-,-
+msrv32_top,Top_Level,ms_riscv32_mp_data_htrans_out,OUTPUT,2,[1:0],module port,ahb data tran	
+msrv32_top,Top_Level,ms_riscv32_mp_eirq_in,INPUT,1,-,module port,connections with interrupt contr...
+msrv32_top,Top_Level,ms_riscv32_mp_tirq_in,INPUT,1,-,-,-
+msrv32_top,Top_Level,ms_riscv32_mp_sirq_in,INPUT,1,-,-,-

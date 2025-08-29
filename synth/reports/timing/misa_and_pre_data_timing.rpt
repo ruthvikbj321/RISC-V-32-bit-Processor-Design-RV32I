@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : misa_and_pre_data
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:39 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: csr_op_2_in
+              (input port)
+  Endpoint: pre_data_out[4]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  csr_op_2_in (in)                         0.00       0.00 f
+  U49/Z (IVP)                              2.45       2.45 r
+  U62/Z (ND2)                              0.22       2.67 f
+  U64/Z (ND2)                              0.50       3.17 r
+  pre_data_out[4] (out)                    0.00       3.17 r
+  data arrival time                                   3.17
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

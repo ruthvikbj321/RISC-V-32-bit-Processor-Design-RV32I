@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_wb_mux_sel_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:31 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: wb_mux_sel_reg_in[2]
+              (input port)
+  Endpoint: wb_mux_out[30]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  wb_mux_sel_reg_in[2] (in)                0.00       0.00 f
+  U339/Z (IVP)                             0.56       0.56 r
+  U344/Z (ND2)                             0.30       0.86 f
+  U345/Z (NR2)                             8.83       9.69 r
+  U355/Z (AO2)                             0.55      10.24 f
+  U356/Z (ND3)                             0.65      10.89 r
+  wb_mux_out[30] (out)                     0.00      10.89 r
+  data arrival time                                  10.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

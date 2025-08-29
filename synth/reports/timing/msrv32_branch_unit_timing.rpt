@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_branch_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:28:04 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: rs1_in[0] (input port)
+  Endpoint: branch_taken_out
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  rs1_in[0] (in)                           0.00       0.00 f
+  U124/Z (IVP)                             0.49       0.49 r
+  U125/Z (ND2)                             0.39       0.88 f
+  U126/Z (IVP)                             0.49       1.37 r
+  U128/Z (ND2)                             0.22       1.58 f
+  U129/Z (ND2)                             0.64       2.22 r
+  U130/Z (AO3)                             0.62       2.84 f
+  U135/Z (AO1P)                            1.31       4.15 r
+  U139/Z (NR2)                             0.37       4.52 f
+  U140/Z (NR2)                             0.81       5.33 r
+  U143/Z (AO3)                             0.50       5.83 f
+  U148/Z (AO2)                             1.08       6.91 r
+  U170/Z (AO3)                             0.50       7.42 f
+  U182/Z (AO7)                             0.78       8.20 r
+  U183/Z (ND2)                             0.30       8.50 f
+  U184/Z (NR2)                             0.81       9.31 r
+  U188/Z (AO3)                             0.50       9.81 f
+  U195/Z (AO2)                             1.08      10.89 r
+  U198/Z (ND2)                             0.22      11.11 f
+  U202/Z (AO6)                             1.60      12.71 r
+  U204/Z (NR2)                             0.37      13.08 f
+  U205/Z (AO1P)                            1.31      14.39 r
+  U239/Z (EO1)                             1.05      15.45 f
+  U240/Z (NR2)                             0.81      16.25 r
+  U241/Z (AO3)                             0.50      16.76 f
+  U242/Z (NR2)                             0.55      17.31 r
+  branch_taken_out (out)                   0.00      17.31 r
+  data arrival time                                  17.31
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

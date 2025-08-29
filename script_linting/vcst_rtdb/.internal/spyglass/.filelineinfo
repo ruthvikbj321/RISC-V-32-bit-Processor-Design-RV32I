@@ -1,0 +1,12 @@
+<Data Filename="../rtl/msrv32_wr_en_generator.sv" Cont="" Gate="" Block="8-16" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_wb_mux_sel_unit.sv" Cont="" Gate="" Block="25-33" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_decoder.sv" Cont="" Gate="" Block="92-101 74-88" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_pc.sv" Cont="" Gate="" Block="25 33 24 31 35 26 27" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_imm_generator.sv" Cont="" Gate="" Block="16-25" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_immediate_adder.sv" Cont="" Gate="" Block="9-14" latch_blk=""> </Data>
+<Data Filename="../rtl/csr_data_mux_unit.v" Cont="" Gate="" Block="41-64" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_load_unit.sv" Cont="" Gate="" Block="38-41 16-26 29-34" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_store_unit.sv" Cont="" Gate="" Block="77-81 62-72 22-40 46-57" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_machine_control.v" Cont="" Gate="" Block="137-188 115-132" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_alu.sv" Cont="" Gate="" Block="39-49" latch_blk=""> </Data>
+<Data Filename="../rtl/msrv32_branch_unit.sv" Cont="" Gate="" Block="16-36" latch_blk=""> </Data>

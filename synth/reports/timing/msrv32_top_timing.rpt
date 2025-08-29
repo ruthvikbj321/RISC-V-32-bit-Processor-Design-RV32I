@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_top
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:29:21 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: REG2/alu_src_reg_out_reg
+              (rising edge-triggered flip-flop clocked by ms_riscv32_mp_clk_in)
+  Endpoint: REG1/pc_out_reg[15]
+            (rising edge-triggered flip-flop clocked by ms_riscv32_mp_clk_in)
+  Path Group: ms_riscv32_mp_clk_in
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ms_riscv32_mp_clk_in (rise edge)                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG2/alu_src_reg_out_reg/CP (FD2P)                      0.00 #     0.00 r
+  REG2/alu_src_reg_out_reg/Q (FD2P)                       1.63       1.63 r
+  REG2/alu_src_reg_out (msrv32_reg_block2)                0.00       1.63 r
+  WBMUX/alu_src_reg_in (msrv32_wb_mux_sel_unit)           0.00       1.63 r
+  WBMUX/U303/Z2 (B2IP)                                    0.97       2.60 r
+  WBMUX/U270/Z (MUX21L)                                   0.78       3.38 f
+  WBMUX/alu_2nd_src_mux_out[0] (msrv32_wb_mux_sel_unit)
+                                                          0.00       3.38 f
+  ALU/op_2_in[0] (msrv32_alu)                             0.00       3.38 f
+  ALU/U1140/Z1 (B2I)                                      1.14       4.52 r
+  ALU/U1192/Z (AN2P)                                      1.33       5.85 r
+  ALU/U1201/Z2 (B2IP)                                     0.99       6.84 r
+  ALU/U1048/Z (ND2)                                       0.30       7.14 f
+  ALU/U1668/Z (ND4)                                       1.36       8.50 r
+  ALU/U1782/Z (MUX21L)                                    0.42       8.92 f
+  ALU/U1783/Z (ND2)                                       0.91       9.84 r
+  ALU/U1784/Z (IVP)                                       0.23      10.06 f
+  ALU/U1786/Z (NR2P)                                      0.82      10.88 r
+  ALU/U1066/Z (AO3)                                       0.50      11.38 f
+  ALU/U1800/Z (AO6)                                       1.08      12.46 r
+  ALU/U1000/Z (AO3)                                       0.56      13.02 f
+  ALU/result_out[6] (msrv32_alu)                          0.00      13.02 f
+  WBMUX/alu_result_in[6] (msrv32_wb_mux_sel_unit)         0.00      13.02 f
+  WBMUX/U256/Z (IVA)                                      0.31      13.33 r
+  WBMUX/U397/Z (AO3)                                      0.62      13.95 f
+  WBMUX/wb_mux_out[6] (msrv32_wb_mux_sel_unit)            0.00      13.95 f
+  IRF/rd_in[6] (msrv32_integer_file)                      0.00      13.95 f
+  IRF/U4068/Z (ND2)                                       0.64      14.59 r
+  IRF/U4076/Z (ND3)                                       0.48      15.07 f
+  IRF/U4077/Z (OR3P)                                      1.59      16.67 f
+  IRF/rs_1_out[6] (msrv32_integer_file)                   0.00      16.67 f
+  imm_adder/rs_1_in[6] (msrv32_immediate_adder)           0.00      16.67 f
+  imm_adder/U112/Z (MUX21L)                               0.56      17.22 r
+  imm_adder/U94/Z (OR2P)                                  0.59      17.81 r
+  imm_adder/U16/Z (AO7)                                   0.45      18.27 f
+  imm_adder/U172/Z (AO2)                                  1.47      19.74 r
+  imm_adder/U55/Z (IVA)                                   0.43      20.17 f
+  imm_adder/U85/Z (AO3P)                                  0.90      21.06 r
+  imm_adder/U105/Z (ND2P)                                 0.30      21.36 f
+  imm_adder/U104/Z (AO7)                                  1.04      22.40 r
+  imm_adder/U193/Z (AN2P)                                 0.68      23.08 r
+  imm_adder/U101/Z (AO7)                                  0.53      23.62 f
+  imm_adder/U8/Z (ND3)                                    0.93      24.55 r
+  imm_adder/U100/Z (ND2)                                  0.30      24.85 f
+  imm_adder/U99/Z (AO6)                                   1.08      25.93 r
+  imm_adder/U2/Z (EN)                                     1.19      27.12 f
+  imm_adder/iadder_out[15] (msrv32_immediate_adder)       0.00      27.12 f
+  PC/iaddr_in[15] (msrv32_pc)                             0.00      27.12 f
+  PC/U420/Z (ND2)                                         0.78      27.90 r
+  PC/U244/Z (AO3P)                                        0.61      28.51 f
+  PC/pc_mux_out[15] (msrv32_pc)                           0.00      28.51 f
+  REG1/pc_mux_in[15] (msrv32_reg_block_1)                 0.00      28.51 f
+  REG1/U69/Z (IVP)                                        0.49      29.00 r
+  REG1/U70/Z (NR2P)                                       0.19      29.20 f
+  REG1/pc_out_reg[15]/D (FD1)                             0.00      29.20 f
+  data arrival time                                                 29.20
+
+  clock ms_riscv32_mp_clk_in (rise edge)                 30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  REG1/pc_out_reg[15]/CP (FD1)                            0.00      30.00 r
+  library setup time                                     -0.80      29.20
+  data required time                                                29.20
+  --------------------------------------------------------------------------
+  data required time                                                29.20
+  data arrival time                                                -29.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

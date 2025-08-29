@@ -1,0 +1,41 @@
+# vsim -vopt -voptargs="+acc" -coverage -c -do "coverage save -onexit -codeAll ../sim/covdb_alu.ucdb; log -r /* ;run -all; quit" msrv32_alu_tb -work ../sim -l ../sim/simulation_alu.log -wlf ../sim/alu/waveform_alu.wlf 
+# Start time: 21:24:04 on Aug 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2022.1_2 linux_x86_64 Apr  2 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.msrv32_alu_tb(fast)
+# Loading work.msrv32_alu(fast)
+# coverage save -onexit -codeAll ../sim/covdb_alu.ucdb
+#  log -r /* 
+# run -all
+# Time=0 | op1=0 | op2=0 | opcode=0000 | result=0
+# Time=10 | op1=20 | op2=40 | opcode=0000 | result=60
+# Time=20 | op1=40 | op2=20 | opcode=1000 | result=20
+# Time=30 | op1=15 | op2=7 | opcode=0111 | result=7
+# Time=40 | op1=5 | op2=12 | opcode=0110 | result=13
+# Time=50 | op1=10 | op2=5 | opcode=0100 | result=15
+# Time=60 | op1=10 | op2=20 | opcode=0010 | result=1
+# Time=70 | op1=20 | op2=10 | opcode=0011 | result=0
+# Time=80 | op1=8 | op2=1 | opcode=0001 | result=16
+# Time=90 | op1=8 | op2=1 | opcode=0101 | result=4
+# Time=100 | op1=8 | op2=1 | opcode=1101 | result=4
+# ** Note: $finish    : ../tb/msrv32_alu_tb.sv(54)
+#    Time: 200 ns  Iteration: 0  Instance: /msrv32_alu_tb
+# Saving coverage database on exit...
+# End time: 21:24:05 on Aug 27,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

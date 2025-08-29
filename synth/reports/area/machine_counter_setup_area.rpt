@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : machine_counter_setup
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:48 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/lib/lsi_10k.db)
+
+Number of ports:                           51
+Number of nets:                            31
+Number of cells:                           14
+Number of combinational cells:             11
+Number of sequential cells:                 2
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                       7
+
+Combinational area:                 18.000000
+Buf/Inv area:                        2.000000
+Noncombinational area:              14.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    32.000000
+Total area:                 undefined
+1

@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_imm_generator
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:26:51 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: imm_type_in[0]
+              (input port)
+  Endpoint: imm_out[30]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  imm_type_in[0] (in)                      0.00       0.00 f
+  U81/Z (IVP)                              0.49       0.49 r
+  U82/Z (ND2)                              1.07       1.56 f
+  U114/Z (NR2)                             3.40       4.96 r
+  U135/Z (ND2)                             0.22       5.17 f
+  U136/Z (ND2)                             0.50       5.67 r
+  imm_out[30] (out)                        0.00       5.67 r
+  data arrival time                                   5.67
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

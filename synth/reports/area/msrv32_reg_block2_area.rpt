@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv32_reg_block2
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:28:02 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/lib/lsi_10k.db)
+
+Number of ports:                          453
+Number of nets:                           456
+Number of cells:                          228
+Number of combinational cells:              3
+Number of sequential cells:               225
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                       3
+
+Combinational area:                  3.000000
+Buf/Inv area:                        2.000000
+Noncombinational area:            2025.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  2028.000000
+Total area:                 undefined
+1

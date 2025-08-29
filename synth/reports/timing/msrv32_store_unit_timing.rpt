@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_store_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:16 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: ahb_ready_in
+              (input port)
+  Endpoint: ms_riscv32_mp_dmdata_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ahb_ready_in (in)                        0.00       0.00 r
+  U146/Z (IVP)                             0.23       0.23 f
+  U147/Z (NR2)                             1.33       1.55 r
+  U177/Z (ND2)                             0.30       1.85 f
+  U178/Z (NR2)                             2.62       4.47 r
+  U201/Z (AO2)                             0.55       5.03 f
+  U203/Z (ND2)                             0.50       5.53 r
+  ms_riscv32_mp_dmdata_out[31] (out)       0.00       5.53 r
+  data arrival time                                   5.53
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

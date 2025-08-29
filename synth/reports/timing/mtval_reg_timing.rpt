@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mtval_reg
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:41 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: mtval_out_reg[31]
+              (rising edge-triggered flip-flop)
+  Endpoint: mtval_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  mtval_out_reg[31]/CP (FD1)               0.00       0.00 r
+  mtval_out_reg[31]/Q (FD1)                1.42       1.42 f
+  mtval_out[31] (out)                      0.00       1.42 f
+  data arrival time                                   1.42
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : csr_data_mux_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:35 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: csr_addr_in[9]
+              (input port)
+  Endpoint: csr_data_out[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  csr_addr_in[9] (in)                      0.00       0.00 r
+  U470/Z (ND2)                             0.22       0.22 f
+  U471/Z (NR2)                             1.33       1.54 r
+  U472/Z (IVP)                             0.19       1.74 f
+  U473/Z (NR2)                             1.33       3.06 r
+  U474/Z (IVP)                             0.23       3.29 f
+  U475/Z (NR3)                             1.58       4.87 r
+  U476/Z (ND2)                             0.30       5.17 f
+  U516/Z (NR4)                            17.54      22.71 r
+  U517/Z (AO2)                             0.55      23.26 f
+  U529/Z (ND4)                             0.79      24.05 r
+  U531/Z (AO7)                             0.45      24.50 f
+  U532/Z (ND2)                             0.50      25.00 r
+  csr_data_out[0] (out)                    0.00      25.00 r
+  data arrival time                                  25.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_instruction_mux
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:13 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: flush_in (input port)
+  Endpoint: opcode_out[4]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  flush_in (in)                            0.00       0.00 f
+  U70/Z (OR2P)                             0.94       0.94 f
+  opcode_out[4] (out)                      0.00       0.94 f
+  data arrival time                                   0.94
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

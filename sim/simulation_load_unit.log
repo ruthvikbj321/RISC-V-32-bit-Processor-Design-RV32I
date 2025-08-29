@@ -1,0 +1,44 @@
+# vsim -vopt -voptargs="+acc" -coverage -c -do "coverage save -onexit -codeAll ../sim/covdb_load_unit.ucdb; log -r /* ;run -all; quit" msrv32_load_unit_tb -work ../sim -l ../sim/simulation_load_unit.log -wlf ../sim/load_unit/waveform_load_unit.wlf 
+# Start time: 21:29:11 on Aug 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2022.1_2 linux_x86_64 Apr  2 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.msrv32_load_unit_tb(fast)
+# Loading work.msrv32_load_unit(fast)
+# coverage save -onexit -codeAll ../sim/covdb_load_unit.ucdb
+#  log -r /* 
+# run -all
+# T=0 | resp=0 unsigned=0 size=00 addr_sel=00 data=a5a5a5a5 -> out=ffffffa5
+# T=10000 | resp=0 unsigned=0 size=00 addr_sel=00 data=a5b6c7d8 -> out=ffffffd8
+# PASS: Expected = ffffffd8, Got = ffffffd8
+# T=15000 | resp=0 unsigned=1 size=00 addr_sel=10 data=a5b6c7d8 -> out=000000b6
+# FAIL: Expected = 000000c7, Got = 000000b6
+# T=20000 | resp=0 unsigned=0 size=01 addr_sel=00 data=a5b6c7d8 -> out=ffffc7d8
+# PASS: Expected = ffffc7d8, Got = ffffc7d8
+# T=25000 | resp=0 unsigned=1 size=01 addr_sel=10 data=a5b6c7d8 -> out=0000a5b6
+# PASS: Expected = 0000a5b6, Got = 0000a5b6
+# T=30000 | resp=0 unsigned=0 size=10 addr_sel=10 data=a5b6c7d8 -> out=a5b6c7d8
+# PASS: Expected = a5b6c7d8, Got = a5b6c7d8
+# T=35000 | resp=1 unsigned=0 size=10 addr_sel=10 data=a5b6c7d8 -> out=00000000
+# PASS: Expected = 00000000, Got = 00000000
+# All tests completed.
+# ** Note: $finish    : ../tb/msrv32_load_unit_tb.sv(114)
+#    Time: 40 ns  Iteration: 0  Instance: /msrv32_load_unit_tb
+# Saving coverage database on exit...
+# End time: 21:29:12 on Aug 27,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

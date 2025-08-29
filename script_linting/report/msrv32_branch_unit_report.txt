@@ -1,0 +1,104 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : T-2022.06 -- May 30, 2022
+
+  Report Info
+    Created : Aug 20, 2025  23:57:01
+
+    TopLevelModule: msrv32_branch_unit
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage             Family      Fatals    Errors  Warnings     Infos
+  -----             --------  --------  --------  --------  --------
+  LANGUAGE_CHECK    CODING           0         0         0         1
+  STRUCTURAL_CHECK  CODING           0         0         0         5
+  -----             --------  --------  --------  --------  --------
+  Total                              0         0         0         6
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage             Tag                  Count
+  --------  -----             -------------------  -----
+  info      LANGUAGE_CHECK    ReportPortInfo-ML        1
+  info      STRUCTURAL_CHECK  RegInputOutput-ML        5
+  --------  -----             -------------------  -----
+  Total                                                6
+
+
+
+  -----------------------------------------------------------------------------
+  RegInputOutput-ML  (5 infos/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:2
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_branch_unit.sv
+  LineNumber          : 3
+  Statement           : 			input [31:0]rs2_in, 
+  Signal              : rs2_in[31:0]
+  Module              : msrv32_branch_unit
+  DesignObjHierarchy  : msrv32_branch_unit
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:5
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_branch_unit.sv
+  LineNumber          : 5
+  Statement           : 			input [2:0]	funct3_in, 
+  Signal              : funct3_in[2:0]
+  Module              : msrv32_branch_unit
+  DesignObjHierarchy  : msrv32_branch_unit
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:1
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_branch_unit.sv
+  LineNumber          : 7
+  Statement           : 			output reg	branch_taken_out 
+  Signal              : branch_taken_out
+  Module              : msrv32_branch_unit
+  DesignObjHierarchy  : msrv32_branch_unit
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:4
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_branch_unit.sv
+  LineNumber          : 2
+  Statement           : 			input [31:0]rs1_in, 
+  Signal              : rs1_in[31:0]
+  Module              : msrv32_branch_unit
+  DesignObjHierarchy  : msrv32_branch_unit
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:3
+  Goal                : lint_rtl
+  FileName            : ./../rtl/msrv32_branch_unit.sv
+  LineNumber          : 4
+  Statement           : 			input [4:0]	opcode_6_to_2_in, 
+  Signal              : opcode_6_to_2_in[4:0]
+  Module              : msrv32_branch_unit
+  DesignObjHierarchy  : msrv32_branch_unit
+
+  -----------------------------------------------------------------------------
+  ReportPortInfo-ML  (1 info/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : ReportPortInfo-ML
+  Description   : Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt
+  Violation     : Lint:6
+  Goal          : lint_rtl
+  FileName      : /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/spyglass/vc_lint0/msrv32_branch_unit/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo
+  LineNumber    : 1
+  Statement     : #     Comment          : Report Top Level Module Port Info

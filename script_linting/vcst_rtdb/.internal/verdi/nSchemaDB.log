@@ -1,0 +1,13 @@
+Info: MdmToNSchema, created
+Info: onNldmUpdate : 
+Info: checkDBComplete: false
+Info: Started, state = 0
+Info: Created thread 
+Info: reset()
+Info: onVerdiCompileFinish
+Info: onVerdiCompile : creating DB link 
+Info: kdb path = /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/msrv32_top.exe.daidir/kdb.elab++/
+Info: Linking /home1/BRN49/RuthvikBJ/VLSI_RN/projects/RISC-V/script_linting/vcst_rtdb/.internal/design/msrv32_top.exe.daidir/kdb.elab++/work.lib++/DebussyLib.lib++ to ../../../DebussyLib.lib++ 
+Info: Finish callback 
+Info: reset()
+Info: linkNovasLibsToDB

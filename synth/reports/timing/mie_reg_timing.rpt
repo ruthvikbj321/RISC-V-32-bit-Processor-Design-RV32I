@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mie_reg
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:50 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: meie_reg (rising edge-triggered flip-flop)
+  Endpoint: meie_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  meie_reg/CP (FD1)                        0.00       0.00 r
+  meie_reg/Q (FD1)                         1.42       1.42 f
+  meie_out (out)                           0.00       1.42 f
+  data arrival time                                   1.42
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

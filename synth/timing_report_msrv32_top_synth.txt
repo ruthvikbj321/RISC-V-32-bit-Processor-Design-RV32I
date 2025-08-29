@@ -1,0 +1,90 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'msrv32_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_top
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:33:33 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: MC/curr_state_reg[2]
+              (rising edge-triggered flip-flop clocked by ms_riscv32_mp_clk_in)
+  Endpoint: REG1/pc_out_reg[3]
+            (rising edge-triggered flip-flop clocked by ms_riscv32_mp_clk_in)
+  Path Group: ms_riscv32_mp_clk_in
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ms_riscv32_mp_clk_in (rise edge)                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MC/curr_state_reg[2]/CP (FD1)                           0.00 #     0.00 r
+  MC/curr_state_reg[2]/QN (FD1)                           1.67       1.67 f
+  MC/U21/Z (AN3)                                          0.97       2.64 f
+  MC/U24/Z (OR3P)                                         1.52       4.16 f
+  MC/flush_out (msrv32_machine_control)                   0.00       4.16 f
+  ID/flush_in (msrv32_instruction_mux)                    0.00       4.16 f
+  ID/U6/Z2 (B2I)                                          1.09       5.25 f
+  ID/U32/Z (NR2P)                                         1.20       6.45 r
+  ID/rs1addr_out[0] (msrv32_instruction_mux)              0.00       6.45 r
+  IRF/rs_1_addr_in[0] (msrv32_integer_file)               0.00       6.45 r
+  IRF/U530/Z (OR2P)                                       0.53       6.98 r
+  IRF/U532/Z (AN2P)                                       0.68       7.66 r
+  IRF/U534/Z (ND4P)                                       0.64       8.30 f
+  IRF/U569/Z2 (B2I)                                       0.93       9.23 f
+  IRF/U570/Z (ND2P)                                       1.19      10.42 r
+  IRF/U520/Z (NR2P)                                       0.26      10.68 f
+  IRF/U218/Z (IVDA)                                       1.35      12.02 f
+  IRF/U624/Z (AO2)                                        1.08      13.11 r
+  IRF/U242/Z (AN4P)                                       1.23      14.33 r
+  IRF/U629/Z (ND3)                                        0.48      14.82 f
+  IRF/U14/Z (OR3)                                         1.60      16.42 f
+  IRF/rs_1_out[3] (msrv32_integer_file)                   0.00      16.42 f
+  BU/rs1_in[3] (msrv32_branch_unit)                       0.00      16.42 f
+  BU/U161/Z (ND2)                                         0.64      17.06 r
+  BU/U162/Z (ND2)                                         0.39      17.44 f
+  BU/U167/Z (OR4)                                         1.51      18.95 f
+  BU/U168/Z (AO3P)                                        0.63      19.58 r
+  BU/U169/Z (ND2)                                         0.30      19.88 f
+  BU/U177/Z (AO6P)                                        1.06      20.95 r
+  BU/U181/Z (AO7P)                                        0.37      21.32 f
+  BU/U188/Z (AO6P)                                        1.06      22.38 r
+  BU/U223/Z (AO7P)                                        0.41      22.79 f
+  BU/U224/Z (IVAP)                                        0.36      23.15 r
+  BU/U19/Z (ND2)                                          0.30      23.45 f
+  BU/U234/Z (AO3P)                                        0.63      24.09 r
+  BU/U235/Z (AN2P)                                        0.90      24.98 r
+  BU/branch_taken_out (msrv32_branch_unit)                0.00      24.98 r
+  PC/branch_taken_in (msrv32_pc)                          0.00      24.98 r
+  PC/U148/Z (AN2P)                                        0.83      25.81 r
+  PC/U28/Z (IVP)                                          0.42      26.24 f
+  PC/U27/Z (IVP)                                          1.01      27.25 r
+  PC/U149/Z (ND2P)                                        0.25      27.50 f
+  PC/U150/Z (AO3P)                                        0.90      28.40 r
+  PC/pc_mux_out[3] (msrv32_pc)                            0.00      28.40 r
+  REG1/pc_mux_in[3] (msrv32_reg_block_1)                  0.00      28.40 r
+  REG1/pc_out_reg[3]/CR (FDS2L)                           0.00      28.40 r
+  data arrival time                                                 28.40
+
+  clock ms_riscv32_mp_clk_in (rise edge)                 30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  REG1/pc_out_reg[3]/CP (FDS2L)                           0.00      30.00 r
+  library setup time                                     -1.60      28.40
+  data required time                                                28.40
+  --------------------------------------------------------------------------
+  data required time                                                28.40
+  data arrival time                                                -28.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

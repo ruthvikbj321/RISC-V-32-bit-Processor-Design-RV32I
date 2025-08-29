@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_pc
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:26:49 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: pc_in[2] (input port)
+  Endpoint: pc_mux_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  pc_in[2] (in)                            0.00       0.00 r
+  U175/Z (IVP)                             0.26       0.26 f
+  U177/Z (NR2)                             1.33       1.59 r
+  U178/Z (ND2)                             0.47       2.06 f
+  U180/Z (NR2)                             1.33       3.38 r
+  U181/Z (ND2)                             0.47       3.86 f
+  U183/Z (NR2)                             1.33       5.18 r
+  U184/Z (ND2)                             0.47       5.65 f
+  U186/Z (NR2)                             1.33       6.98 r
+  U187/Z (ND2)                             0.47       7.45 f
+  U189/Z (NR2)                             1.33       8.78 r
+  U190/Z (ND2)                             0.47       9.25 f
+  U192/Z (NR2)                             1.33      10.58 r
+  U193/Z (ND2)                             0.47      11.05 f
+  U195/Z (NR2)                             1.33      12.38 r
+  U196/Z (ND2)                             0.47      12.85 f
+  U198/Z (NR2)                             1.33      14.17 r
+  U199/Z (ND2)                             0.47      14.65 f
+  U201/Z (NR2)                             1.33      15.97 r
+  U202/Z (ND2)                             0.47      16.44 f
+  U204/Z (NR2)                             1.33      17.77 r
+  U205/Z (ND2)                             0.47      18.24 f
+  U207/Z (NR2)                             1.33      19.57 r
+  U208/Z (ND2)                             0.47      20.04 f
+  U210/Z (NR2)                             1.33      21.37 r
+  U211/Z (ND2)                             0.47      21.84 f
+  U213/Z (NR2)                             1.33      23.17 r
+  U214/Z (ND2)                             0.47      23.64 f
+  U216/Z (NR2)                             1.33      24.96 r
+  U217/Z (AN2P)                            0.76      25.72 r
+  U218/Z (EO)                              1.13      26.84 f
+  U223/Z (AO2)                             1.08      27.93 r
+  U228/Z (ND2)                             0.30      28.23 f
+  pc_mux_out[31] (out)                     0.00      28.23 f
+  data arrival time                                  28.23
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

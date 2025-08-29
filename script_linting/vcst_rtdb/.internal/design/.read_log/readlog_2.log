@@ -1,0 +1,118 @@
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/msrv32_machine_control.v
+LINE_NUMBER:18
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;msrv32_machine_control&quot; has `timescale but previous module(s) do VCST_RETnot.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/msrv32_csr_file.v
+LINE_NUMBER:32
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;msrv32_csr_file&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/data_wr_mux_unit.v
+LINE_NUMBER:4
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;data_wr_mux_unit&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/csr_data_mux_unit.v
+LINE_NUMBER:4
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;csr_data_mux_unit&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mstatus_reg.v
+LINE_NUMBER:2
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mstatus_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/misa_and_pre_data.v
+LINE_NUMBER:4
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;misa_and_pre_data&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mie_reg.v
+LINE_NUMBER:4
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mie_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mtvec_reg.v
+LINE_NUMBER:2
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mtvec_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mepc_and_mscratch_reg.v
+LINE_NUMBER:2
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mepc_and_mscratch_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mcause_reg.v
+LINE_NUMBER:2
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mcause_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mip_reg.v
+LINE_NUMBER:2
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mip_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/mtval_reg.v
+LINE_NUMBER:3
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;mtval_reg&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/machine_counter_setup.v
+LINE_NUMBER:4
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;machine_counter_setup&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:UTSFM
+FILE_NAME:../rtl/machine_counter.v
+LINE_NUMBER:2
+VCS_SEVERITY:Warning
+MESSAGE:  Module &quot;machine_counter&quot; has `timescale but previous module(s) do not.VCST_RETPlease either remove this module&apos;s timescale or add timescale for previous VCST_RETmodule(s)to avoid unexpected simulation result.
+END_VIOLATION
+
+BEGIN_VIOLATION
+RULE_NAME:DB_CANT_LOAD
+VCS_SEVERITY:Warning
+MESSAGE:  Invalid link library file specified. Cannot load link library &apos;.//&apos;
+END_VIOLATION
+

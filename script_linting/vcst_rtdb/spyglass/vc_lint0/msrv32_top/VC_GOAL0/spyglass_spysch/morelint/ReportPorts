@@ -1,0 +1,18 @@
+SCHEMA@@PName@@Dir@@Msb@@Lsb@@Desc@@DU@@DU_BBOX
+VALUE@@ms_riscv32_mp_clk_in@@INPUT@@0@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_rst_in@@INPUT@@0@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_rc_in@@INPUT@@63@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_instr_hready_in@@INPUT@@0@@0@@connection with instruction mem@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_instr_in@@INPUT@@31@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_imaddr_out@@OUTPUT@@31@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_data_hready_in@@INPUT@@0@@0@@connection with data memory@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_hresp_in@@INPUT@@0@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_dmdata_in@@INPUT@@31@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_dmaddr_out@@OUTPUT@@31@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_dmdata_out@@OUTPUT@@31@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_dmwr_req_out@@OUTPUT@@0@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_dmwr_mask_out@@OUTPUT@@3@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_data_htrans_out@@OUTPUT@@1@@0@@ahb data tran	@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_eirq_in@@INPUT@@0@@0@@connections with interrupt contr...@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_tirq_in@@INPUT@@0@@0@@-@@msrv32_top@@No
+VALUE@@ms_riscv32_mp_sirq_in@@INPUT@@0@@0@@-@@msrv32_top@@No

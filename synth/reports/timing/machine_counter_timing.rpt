@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : machine_counter
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:54 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: mcycle_out_reg[59]
+              (rising edge-triggered flip-flop)
+  Endpoint: mcycle_out[59]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  mcycle_out_reg[59]/CP (FD1)              0.00       0.00 r
+  mcycle_out_reg[59]/Q (FD1)               1.82       1.82 r
+  mcycle_out[59] (out)                     0.00       1.82 r
+  data arrival time                                   1.82
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

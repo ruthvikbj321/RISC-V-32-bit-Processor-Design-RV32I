@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_load_unit
+Version: T-2022.03-SP4
+Date   : Sat Aug 30 03:27:26 2025
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: iadder_out_1_to_0_in[1]
+              (input port)
+  Endpoint: lu_output_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  iadder_out_1_to_0_in[1] (in)             0.00       0.00 r
+  U129/Z (IVP)                             0.23       0.23 f
+  U130/Z (AO2)                             1.34       1.57 r
+  U132/Z (AO2)                             0.55       2.12 f
+  U134/Z (ND2)                             0.78       2.90 r
+  U142/Z (NR2)                             0.37       3.26 f
+  U163/Z (AO7)                             4.70       7.96 r
+  U195/Z (ND2)                             0.13       8.09 f
+  lu_output_out[31] (out)                  0.00       8.09 f
+  data arrival time                                   8.09
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
